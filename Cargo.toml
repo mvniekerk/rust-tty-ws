@@ -2,6 +2,7 @@
 members = [
     "chart",
     "wslib",
-    "tty"
+    "tty",
+    "ttyrandom"
 ]
 
