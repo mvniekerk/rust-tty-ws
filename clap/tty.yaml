@@ -1,0 +1,23 @@
+name: chart
+version: "1.0"
+author: Michael van Niekerk <mvniekerk@gmail.com>
+about: Websocket server that relays the messages from the tty
+args:
+  - verbose:
+      short: v
+      multiple: true
+      about: Sets the level of verbosity
+  - address:
+      short: a
+      value_name: ADDRESS
+      required: false
+      about: Hostname and port to bind to
+      takes_value: true
+      default_value: "0.0.0.0:8000"
+  - static:
+      short: s
+      value_name: STATIC
+      required: false
+      about: The static files folder to serve
+      takes_value: true
+      default_value: './chart/www'
